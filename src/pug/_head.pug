@@ -1,0 +1,29 @@
+mixin head(title, type, description)
+  meta(charset="UTF-8")
+  meta(name="viewport" content="width=device-width,initial-scale=1")
+
+  unless description
+    - var description = "筋肉がすべて";
+
+  meta(name="description" content=description)
+
+  meta(property="og:type" content=type)
+  meta(property="og:image" content="")
+  meta(property="og:url" content="http://kosen14s.github.io")
+  meta(property="og:site_name" content="Kosen14's")
+  meta(property="og:locale" content="ja_JP")
+  meta(property="fb:admins" content="1017782938294691")
+  meta(property="fb:app_id" content="1017782938294691")
+  meta(name="twitter:card" content="summary_large_image")
+  meta(name="twitter:description" content=description)
+  meta(name="twitter:image" content="")
+
+  if title
+    title #{title} | Kosen14's
+    meta(name="twitter:title" content=title + " | Kosen14's")
+  else
+    title Kosen14's
+    meta(name="twitter:title" content="Kosen14's")
+
+  link(rel="icon" href="./images/favicon/favicon.ico")
+  link(rel="apple-touch-icon" href="./images/favicon/apple-touch-icon.png")

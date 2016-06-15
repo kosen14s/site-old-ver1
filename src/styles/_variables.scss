@@ -1,0 +1,22 @@
+$white: #fff;
+$black: #333;
+$gray: #666;
+$light-gray: #ccc;
+$dark-brown: #2D2523;
+$official-twitter: #55acee;
+$official-facebook: #455a9e;
+
+// font-family の指定は必要か？（明朝だけでいいかも）
+$primary-font: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+$code-font: Ricty;
+
+$text-line-height: 1.75;
+$text-line-height-sm: 2.1;
+$text-letter-spacing: 0.05rem;
+
+$fade: 0.2s ease-out;
+$movement: 0.8s ease-in-out;
+$shadow: 0 1px 10px 0 rgba($black, .1);
+$semitransparent: 0.92;
+
+$nav-height: 60px;
