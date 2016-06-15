@@ -19,7 +19,7 @@ const $           = loadPlugins();
 const reload      = browserSync.reload;
 
 const SRC_DIR     = path.join(__dirname, "./src");
-const DEST_DIR    = path.join(__dirname, "./");
+const DEST_DIR    = path.join(__dirname, "./dest");
 
 const PUG_DIR     = path.join(SRC_DIR, "pug");
 const STYLES_DIR  = path.join(SRC_DIR, "styles");
