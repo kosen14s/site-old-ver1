@@ -2,12 +2,12 @@ $white: #fff;
 $black: #333;
 $gray: #666;
 $light-gray: #ccc;
-$dark-brown: #2D2523;
+$dark-brown: #251A18;
+$light-brown: #EEE5DE;
 $official-twitter: #55acee;
 $official-facebook: #455a9e;
 
-// font-family の指定は必要か？（明朝だけでいいかも）
-$primary-font: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+$primary-font: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 $code-font: Ricty;
 
 $text-line-height: 1.75;
@@ -19,4 +19,4 @@ $movement: 0.8s ease-in-out;
 $shadow: 0 1px 10px 0 rgba($black, .1);
 $semitransparent: 0.92;
 
-$nav-height: 60px;
+$nav-height: 100px;
