@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  background-color: $white;
+  color: $black;
+  font-family: $primary-font;
+  line-height: 1;
+  position: relative;
+
+  @media (max-width: 900px) {
+    font-size: 14px;
+  }
+}
+
+::selection {
+  /* background-color: lighten($lol-orange, 10%); */
+}
+
+h1 { @include h1; }
+h2 { @include h2; }
+h3 { @include h3; }
+h4 { @include h4; }
+h5 { @include h5; }
+h6 { @include h6; }
+
+p { @include p; }
+blockquote { @include blockquote; }
+a { @include a; }
+strong { @include strong; }
+kbd,
+code {
+  @include kbd;
+}
+hr { @include hr; }
+small { @include small; }
+address { @include address; }
+ul,
+ol {
+  @include list;
+}
+img { @include img; }
+
+label { @include label; }
+input { @include input; }
+button,
+.btn {
+  @include button;
+}
+.disabled { @include disabled; }
+.expand { @include expand; }
+
+table { @include table; }
+
+pre,
+code {
+  font-family: $code-font;
+}
+
+.animhop {
+  @include animhop;
+}
+
+.animhop-hover {
+  &:hover {
+    @include animhop;
+  }
+}
+
+.animrot {
+  @include animrot;
+}
+
+.animrot-hover {
+  &:hover {
+    @include animrot;
+  }
+}
