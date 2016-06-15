@@ -1,0 +1,9 @@
+machine:
+    timezone: Asia/Tokyo
+deployment:
+  production:
+    branch: develop
+    commands:
+      - git config --global user.name "yamasy1549"
+      - git config --global user.email "sanae@yamasy.info"
+      - gulp deploy

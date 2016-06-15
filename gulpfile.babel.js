@@ -3,6 +3,7 @@
 import autoprefixer from "gulp-autoprefixer";
 import browserSync  from "browser-sync";
 import gulp         from "gulp";
+import ghPages      from "gulp-gh-pages";
 import imagemin     from "gulp-imagemin";
 import pug          from "gulp-pug";
 import loadPlugins  from "gulp-load-plugins";
@@ -18,7 +19,7 @@ const $           = loadPlugins();
 const reload      = browserSync.reload;
 
 const SRC_DIR     = path.join(__dirname, "./src");
-const DEST_DIR    = path.join(__dirname, "./");
+const DEST_DIR    = path.join(__dirname, "./dest");
 
 const PUG_DIR     = path.join(SRC_DIR, "pug");
 const STYLES_DIR  = path.join(SRC_DIR, "styles");
@@ -49,9 +50,19 @@ const BROWSER_SYNC_OPTIONS = {
     open: false
 };
 
+const GH_PAGES_OPTIONS = {
+    branch: "master"
+};
+
 gulp.task("pug", () => {
     return gulp.src([path.join(PUG_DIR, "**/*.pug"), "!" + path.join(PUG_DIR, "**/_*.pug")])
         .pipe(plumber())
+        .pipe(pug(PUG_OPTIONS))
+        .pipe(gulp.dest(DEST_DIR));
+});
+
+gulp.task("pug-noplumber", () => {
+    return gulp.src([path.join(PUG_DIR, "**/*.pug"), "!" + path.join(PUG_DIR, "**/_*.pug")])
         .pipe(pug(PUG_OPTIONS))
         .pipe(gulp.dest(DEST_DIR));
 });
@@ -64,6 +75,14 @@ gulp.task("scss", () => {
                 this.emit('end');
             }
         }))
+        .pipe(sassGlob())
+        .pipe(sass(SASS_OPTIONS))
+        .pipe(autoprefixer())
+        .pipe(gulp.dest(path.join(DEST_DIR, "styles")));
+});
+
+gulp.task("scss-noplumber", () => {
+    return gulp.src(path.join(STYLES_DIR, "**/*.{scss,css}"))
         .pipe(sassGlob())
         .pipe(sass(SASS_OPTIONS))
         .pipe(autoprefixer())
@@ -88,6 +107,13 @@ gulp.task("jsmin", () => {
     return gulp.src(path.join(SCRIPTS_DIR, "**/*.js"))
         .pipe(uglify({preserveComments: 'some'}))
         .pipe(gulp.dest(path.join(DEST_DIR, "scripts")));
+});
+
+gulp.task("compile", ["pug-noplumber", "scss-noplumber", "imagemin", "jsmin"]);
+
+gulp.task("deploy", () => {
+    return gulp.src(path.join(DEST_DIR, "**/*"))
+        .pipe(ghPages(GH_PAGES_OPTIONS))
 });
 
 gulp.task("watch", () => {
