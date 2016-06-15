@@ -2,7 +2,7 @@
 
 ## これはなに
 
-![http://kosen14s.github.io](http://kosen14s.github.io) のソースコードです。
+[http://kosen14s.github.io](http://kosen14s.github.io) のソースコードです。
 
 ## はじめかた
 
@@ -26,7 +26,7 @@ gulp watch
 # ファイルの変更を検知して自動でブラウザを更新します
 ```
 
-![localhost:3000](localhost:3000) にアクセス
+[localhost:3000](localhost:3000) にアクセス
 
 `src/` 内のファイルをいじって commit してください。
 
@@ -34,7 +34,7 @@ gulp watch
 
 `develop` から好きな名前で生やしてください。
 
-pull req は **base: develop** **compare: (生やしたブランチ)** で作ります。
+pull req は「**base: develop**」「**compare: (生やしたブランチ)**」で作ります。
 
 pull req を作ると、コンパイルエラーなどがないかテストが走ります。オールグリーンにならないと merge ができません！
 
