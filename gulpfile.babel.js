@@ -56,6 +56,12 @@ gulp.task("pug", () => {
         .pipe(gulp.dest(DEST_DIR));
 });
 
+gulp.task("pug-noplumber", () => {
+    return gulp.src([path.join(PUG_DIR, "**/*.pug"), "!" + path.join(PUG_DIR, "**/_*.pug")])
+        .pipe(pug(PUG_OPTIONS))
+        .pipe(gulp.dest(DEST_DIR));
+});
+
 gulp.task("scss", () => {
     return gulp.src(path.join(STYLES_DIR, "**/*.{scss,css}"))
         .pipe(plumber({
@@ -64,6 +70,14 @@ gulp.task("scss", () => {
                 this.emit('end');
             }
         }))
+        .pipe(sassGlob())
+        .pipe(sass(SASS_OPTIONS))
+        .pipe(autoprefixer())
+        .pipe(gulp.dest(path.join(DEST_DIR, "styles")));
+});
+
+gulp.task("scss-noplumber", () => {
+    return gulp.src(path.join(STYLES_DIR, "**/*.{scss,css}"))
         .pipe(sassGlob())
         .pipe(sass(SASS_OPTIONS))
         .pipe(autoprefixer())
@@ -89,6 +103,8 @@ gulp.task("jsmin", () => {
         .pipe(uglify({preserveComments: 'some'}))
         .pipe(gulp.dest(path.join(DEST_DIR, "scripts")));
 });
+
+gulp.task("compile", ["pug-noplumber", "scss-noplumber", "imagemin", "jsmin"]);
 
 gulp.task("watch", () => {
     browserSync(BROWSER_SYNC_OPTIONS);
