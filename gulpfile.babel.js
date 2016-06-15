@@ -3,6 +3,7 @@
 import autoprefixer from "gulp-autoprefixer";
 import browserSync  from "browser-sync";
 import gulp         from "gulp";
+import ghPages      from "gulp-gh-pages";
 import imagemin     from "gulp-imagemin";
 import pug          from "gulp-pug";
 import loadPlugins  from "gulp-load-plugins";
@@ -47,6 +48,10 @@ const IMAGEMIN_OPTIONS = {
 const BROWSER_SYNC_OPTIONS = {
     server: [SRC_DIR, DEST_DIR],
     open: false
+};
+
+const GH_PAGES_OPTIONS = {
+    branch: "master"
 };
 
 gulp.task("pug", () => {
@@ -105,6 +110,11 @@ gulp.task("jsmin", () => {
 });
 
 gulp.task("compile", ["pug-noplumber", "scss-noplumber", "imagemin", "jsmin"]);
+
+gulp.task("deploy", () => {
+    return gulp.src(path.join(DEST_DIR, "**/*"))
+        .pipe(ghPages(GH_PAGES_OPTIONS))
+});
 
 gulp.task("watch", () => {
     browserSync(BROWSER_SYNC_OPTIONS);
