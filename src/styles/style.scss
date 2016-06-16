@@ -1,5 +1,10 @@
 @import 'sanitize';
+@import '960';
 @import 'variables';
+
 @import 'mixins';
 @import 'atoms';
-@import '960';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/section';
+@import 'pages/bookclub';

@@ -1,0 +1,45 @@
+body {
+  background-color: $light-brown;
+  color: $font-color;
+}
+
+.underline {
+  border-bottom: 2px solid $white;
+}
+
+.title {
+  .logo {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.lead,
+.lead * {
+  color: $white;
+}
+
+.book {
+  margin: 40px auto;
+
+  .icon {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: $white;
+  }
+
+  .name {
+    width: 100%;
+    display: inline-block;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .introduction {
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+}

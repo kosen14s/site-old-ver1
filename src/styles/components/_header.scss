@@ -1,0 +1,12 @@
+.global-header {
+  width: 100%;
+  height: $header-height;
+  background-color: $dark-brown;
+  position: absolute;
+  top: 0;
+  color: $white;
+  box-shadow:
+    0 10px lighten($dark-brown, 10%),
+    0 20px lighten($dark-brown, 30%),
+    0 30px lighten($dark-brown, 50%);
+}
