@@ -1,0 +1,10 @@
+mixin book(name, account, icon, title, url)
+  article.book
+    .introduction
+      h2.title
+        a(href=url)= title
+      block
+    .introducer
+      a(href=account)
+        img.icon(src="./images/" + icon)
+      a.name(href=account)= '@' + name

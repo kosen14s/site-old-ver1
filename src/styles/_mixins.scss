@@ -76,7 +76,7 @@
 
 /* text link */
 
-@mixin a($color: $white) {
+@mixin a($color: lighten($dark-brown, 30%)) {
   color: $color;
   text-decoration: underline;
   transition: $fade;

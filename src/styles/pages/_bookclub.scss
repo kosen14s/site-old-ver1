@@ -1,0 +1,52 @@
+body {
+  background-color: $light-brown;
+  color: $font-color;
+}
+
+.book {
+  display: table;
+  margin: 40px auto;
+
+  .introduction,
+  .introducer {
+    display: table-cell;
+  }
+
+  .introduction {
+    padding-right: 40px;
+    vertical-align: top;
+
+    > h2 {
+      margin-top: 0;
+    }
+
+    p {
+      overflow : hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+    }
+  }
+
+  .introducer {
+    width: 15%;
+
+    @media(max-width: 960px) {
+      width: 20%;
+    }
+
+    .icon {
+      display: inline-block;
+      border-radius: 50%;
+      background-color: $white;
+    }
+
+    .name {
+      width: 100%;
+      display: inline-block;
+      margin: 20px auto;
+      text-align: center;
+    }
+  }
+}

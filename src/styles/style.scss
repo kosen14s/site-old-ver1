@@ -1,4 +1,9 @@
 @import 'sanitize';
 @import 'variables';
+
 @import 'mixins';
 @import 'atoms';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/section';
+@import 'pages/bookclub';
