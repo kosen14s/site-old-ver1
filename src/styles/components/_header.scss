@@ -1,6 +1,8 @@
 .global-header {
   width: 100%;
   height: $header-height;
+  padding-right: 15%;
+  padding-left: 15%;
   background-color: $dark-brown;
   position: absolute;
   top: 0;
@@ -9,4 +11,37 @@
     0 10px lighten($dark-brown, 10%),
     0 20px lighten($dark-brown, 30%),
     0 30px lighten($dark-brown, 50%);
+
+  @media(max-width: 960px) {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+
+  @media(max-width: 340px) {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  .underline { border-bottom: 2px solid $white; }
+
+  .title {
+    .logo {
+      width: auto;
+      height: 100%;
+
+      @media(max-width: 340px) {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .lead,
+  .lead > * {
+    display: inline-block;
+    float: right;
+  }
+
+  .lead * {
+    color: $white;
+  }
 }
