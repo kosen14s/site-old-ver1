@@ -1,6 +1,6 @@
 .global-header {
   width: 100%;
-  height: $header-height;
+  padding-top: 20px;
   padding-right: 15%;
   padding-left: 15%;
   background-color: $dark-brown;
@@ -28,9 +28,16 @@
     .logo {
       width: auto;
       height: 100%;
+      display: block;
+
+      @media(max-width: 960px) {
+        margin: auto;
+        width: 60%;
+      }
 
       @media(max-width: 340px) {
-        margin: 0 auto;
+        margin: auto;
+        width: 70%;
       }
     }
   }
