@@ -1,19 +1,21 @@
 'use strict';
 
-import autoprefixer from "gulp-autoprefixer";
-import browserSync  from "browser-sync";
-import gulp         from "gulp";
-import ghPages      from "gulp-gh-pages";
-import imagemin     from "gulp-imagemin";
-import pug          from "gulp-pug";
-import loadPlugins  from "gulp-load-plugins";
-import path         from "path";
-import plumber      from "gulp-plumber";
-import pngquant     from "imagemin-pngquant";
-import sass         from "gulp-sass";
-import sassGlob     from "gulp-sass-glob";
-import sassLint     from "gulp-sass-lint";
-import uglify       from "gulp-uglify";
+import autoprefixer  from "gulp-autoprefixer";
+import browserSync   from "browser-sync";
+import gulp          from "gulp";
+import ghPages       from "gulp-gh-pages";
+import imagemin      from "gulp-imagemin";
+import pug           from "gulp-pug";
+import loadPlugins   from "gulp-load-plugins";
+import path          from "path";
+import plumber       from "gulp-plumber";
+import pngquant      from "imagemin-pngquant";
+import sass          from "gulp-sass";
+import sassGlob      from "gulp-sass-glob";
+import sassLint      from "gulp-sass-lint";
+import vinylYamlData from "vinyl-yaml-data";
+import deepExtend    from "deep-extend-stream";
+import uglify        from "gulp-uglify";
 
 const $           = loadPlugins();
 const reload      = browserSync.reload;
@@ -21,14 +23,18 @@ const reload      = browserSync.reload;
 const SRC_DIR     = path.join(__dirname, "./src");
 const DEST_DIR    = path.join(__dirname, "./dest");
 
+const YAML_DIR    = path.join(SRC_DIR, "yaml");
 const PUG_DIR     = path.join(SRC_DIR, "pug");
 const STYLES_DIR  = path.join(SRC_DIR, "styles");
 const IMAGES_DIR  = path.join(SRC_DIR, "images");
 const SCRIPTS_DIR = path.join(SRC_DIR, "scripts");
 
+const locals = {};
+
 const PUG_OPTIONS = {
     pretty: true,
-    escapePre: true
+    escapePre: true,
+    locals: locals
 };
 
 const SASS_OPTIONS = {
@@ -54,14 +60,20 @@ const GH_PAGES_OPTIONS = {
     branch: "master"
 };
 
-gulp.task("pug", () => {
+gulp.task("yaml", () => {
+    return gulp.src(path.join(YAML_DIR, "**/*.{yaml,yml}"))
+        .pipe(vinylYamlData())
+        .pipe(deepExtend(locals));
+});
+
+gulp.task("pug", ["yaml"], () => {
     return gulp.src([path.join(PUG_DIR, "**/*.pug"), "!" + path.join(PUG_DIR, "**/_*.pug")])
         .pipe(plumber())
         .pipe(pug(PUG_OPTIONS))
         .pipe(gulp.dest(DEST_DIR));
 });
 
-gulp.task("pug-noplumber", () => {
+gulp.task("pug-noplumber", ["yaml"], () => {
     return gulp.src([path.join(PUG_DIR, "**/*.pug"), "!" + path.join(PUG_DIR, "**/_*.pug")])
         .pipe(pug(PUG_OPTIONS))
         .pipe(gulp.dest(DEST_DIR));
@@ -119,9 +131,8 @@ gulp.task("deploy", () => {
 gulp.task("watch", () => {
     browserSync(BROWSER_SYNC_OPTIONS);
 
-    gulp.watch([path.join(PUG_DIR, "**/*.pug")], ["pug", reload]);
+    gulp.watch([path.join(PUG_DIR, "**/*.pug"), path.join(YAML_DIR, "**/*.{yaml,yml}")], ["pug", reload]);
     gulp.watch([path.join(STYLES_DIR, "**/*.{scss,css}")], ["scss", reload]);
     gulp.watch([path.join(SCRIPTS_DIR, "**/*.{jpg,jpeg,png,gif,svg}")], ["imagemin", reload]);
     gulp.watch([path.join(SCRIPTS_DIR, "**/*.js")], ["jsmin", reload]);
 });
-
