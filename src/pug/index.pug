@@ -1,0 +1,18 @@
+doctype html
+include ./_head
+include ./_footer
+
+html(lang="ja")
+  head
+    +head("", "website", "")
+    link(rel="stylesheet" href="./styles/index.css")
+  body
+    main
+      .title
+        h1 Kosen14's
+        ul
+          li 筋トレ
+          li 筋トレ
+          li 筋トレ
+          li: a(href="./bookclub/") 読書会
+      img.muscle(src="./images/muscle.png")
