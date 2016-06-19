@@ -1,7 +1,10 @@
 machine:
-    timezone: Asia/Tokyo
-    node:
-      version: 5.4.1
+  timezone: Asia/Tokyo
+  node:
+    version: 5.4.1
+dependencies:
+  pre:
+    - npm rebuild node-sass
 deployment:
   production:
     branch: develop
