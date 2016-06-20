@@ -2,3 +2,38 @@
   height: $footer-height;
   text-align: center;
 }
+
+.backtotop {
+  position: relative;
+  z-index: 2;
+
+  #twitter {
+    display: block;
+    position: fixed;
+    color: $white;
+    background-color: $official-twitter;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 2px solid $official-twitter;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 20px;
+    padding: 12px;
+    opacity: $semitransparent;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      background-color: $white;
+    }
+
+    &:hover path,
+    &:active path {
+      fill: $official-twitter;
+    }
+  }
+}
