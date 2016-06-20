@@ -5,8 +5,7 @@ include ./_book
 
 html(lang="ja")
   head
-    +head("読書会", "article", "Kosen14's からのコンテンツ第一弾は Kosen14's 読書会です。筋肉と知慧に溢れた kosen14's をお見せしますよ…")
-    link(rel="stylesheet" href="../styles/bookclub.css")
+    +head("読書会", "article", "Kosen14's からのコンテンツ第一弾は Kosen14's 読書会です。筋肉と知慧に溢れた kosen14's をお見せしますよ…", "../styles/bookclub.css", "https://raw.githubusercontent.com/kosen14s/kosen14s.github.io/master/images/bookclub/ogp.png")
   body
     .global-header
       h1.title
@@ -21,6 +20,6 @@ html(lang="ja")
           small 筋肉と知慧に溢れた kosen14's をお見せしますよ…
     main
       each book in bookclub
-        +book(book.account_name, book.account_url, book.account_icon, book.title, book.url)
+        +book(book.account_name, book.account_url, book.account_icon, book.title, book.date, book.url)
           p= book.description
     +footer()
