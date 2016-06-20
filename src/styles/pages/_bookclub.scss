@@ -20,8 +20,34 @@ body {
       padding-right: 20px;
     }
 
+    > * { padding-left: 10px; }
+
     > h2 {
       margin-top: 0;
+      position: relative;
+      border-bottom: 1px dashed $font-color;
+
+      &:after {
+        content: '';
+        background-color: $font-color;
+        display: block;
+        position: absolute;
+        z-index: 10;
+        transition: all .3s ease-out;
+        width: 0px;
+        height: 1px;
+        bottom: -1px;
+        left: -1px;
+      }
+
+      &:hover {
+        &:after {
+          width: 100%;
+          width: calc(100% + 1px);
+        }
+      }
+
+      a { text-decoration: none; }
     }
 
     p {
@@ -42,16 +68,20 @@ body {
 
     .icon {
       display: inline-block;
-      border-radius: 50%;
+      border-radius: 3em 3.7em 3em 2.7em/3.7em 3em 3.9em 3em;
       background-color: $white;
+
+      @media(max-width: 960px) and (min-width: 340px) {
+        border-radius: 6em 7.7em 7em 4.7em/6.7em 6em 6.9em 7em;
+      }
     }
 
     .name {
       width: 100%;
       display: inline-block;
-      margin: 20px auto;
+      margin: 16px auto;
       text-align: center;
-      font-size: 1.2rem;
+      text-decoration: none;
     }
   }
 }
