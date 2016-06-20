@@ -1,4 +1,4 @@
-mixin head(title, type, description, ogp)
+mixin head(title, type, description, stylesheet, ogp)
   meta(charset="UTF-8")
   meta(name="viewport" content="width=device-width,initial-scale=1")
 
@@ -29,3 +29,6 @@ mixin head(title, type, description, ogp)
   else
     title Kosen14's
     meta(name="twitter:title" content="Kosen14's")
+
+  if stylesheet
+    link(rel="stylesheet" href=stylesheet)
