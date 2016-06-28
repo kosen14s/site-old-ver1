@@ -62,3 +62,11 @@
  date: "2016.06.27"
  url: "http://macshaker.hatenablog.com/"
  description: "上質な人間関係を目指すあなたへ"
+- 
+ account_name: "ptr-yudai"
+ account_url: "https://github.com/ptr-yudai"
+ account_icon: "ptr_yudai.jpg"
+ title: "pop pop ret"
+ date: "2016.06.28"
+ url: "http://ydfj.blogspot.com/2016/06/practical-malware-analysis-kosen14s.html"
+ description: "マルウェア解析はこれ一本！"
