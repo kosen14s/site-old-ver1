@@ -6,42 +6,42 @@
         title: マックシェイクはいいぞ
         url: 
         presenter: macshaker
-        icon: 
+        icon: /../images/lt/yamasy.png
         span: 2
         rest: false
       - time: "10:30"
         title: ぼくのかんがえたさいきょうのマイクラ
         url: 
         presenter: chige
-        icon: 
+        icon: /../images/lt/yamasy.png
         span: 2
         rest: false
       - time: "11:00"
         title: I'm DJ Cilvia
         url: 
         presenter: cilvia
-        icon: 
+        icon: /../images/lt/yamasy.png
         span: 2
         rest: false
       - time: "11:30"
         title: エスペラント語をべんきょうした
         url: 
         presenter: eliza
-        icon: 
+        icon: /../images/lt/yamasy.png
         span: 1
         rest: false
       - time: "11:45"
         title: HTMLとCSSでスライドを書く
         url: 
         presenter: kawanaka
-        icon: 
+        icon: /../images/lt/yamasy.png
         span: 1
         rest: false
       - time: "12:00"
         title: 谷山浩子
         url: 
         presenter: theoldmoon0602
-        icon: 
+        icon: /../images/lt/yamasy.png
         span: 2
         rest: false
       - time: "12:30"
@@ -58,28 +58,28 @@
         title: 技科大カンファのデザイン供養
         url: 
         presenter: ig98n
-        icon: 
+        icon: /../images/lt/yamasy.png
         span: 1
         rest: false
       - time: "13:15"
         title: ハッカソン行ってきた
         url: 
         presenter: kawanaka
-        icon: 
+        icon: /../images/lt/yamasy.png
         span: 1
         rest: false
       - time: "13:30"
         title: まほみほ、あるいはまほエリについて
         url: 
         presenter: yamasy1549
-        icon: 
+        icon: /../images/lt/yamasy.png
         rest: false
         span: 2
       - time: "14:00"
         title: "#GentooInstallBattle"
         url: 
         presenter: eliza
-        icon: 
+        icon: /../images/lt/yamasy.png
         span: 2
         rest: false
       - time: "14:30"
@@ -93,14 +93,14 @@
         title: 論理回路入門
         url: 
         presenter: ptr-yudai
-        icon: 
+        icon: /../images/lt/yamasy.png
         span: 4
         rest: false
       - time: "16:00"
         title: ｻﾊﾞｯ･･･ｻﾊﾞｻﾊﾞｯ･･･
         url: 
         presenter: shuft
-        icon: 
+        icon: /../images/lt/yamasy.png
         span: 1
         rest: false
       - time: "16:15"
