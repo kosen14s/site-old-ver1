@@ -1,0 +1,112 @@
+- 
+  - name: 午前の部
+    abbr: am
+    lts:
+      - time: "10:00"
+        title: マックシェイクはいいぞ
+        url: 
+        presenter: macshaker
+        icon: 
+        span: 2
+        rest: false
+      - time: "10:30"
+        title: ぼくのかんがえたさいきょうのマイクラ
+        url: 
+        presenter: chige
+        icon: 
+        span: 2
+        rest: false
+      - time: "11:00"
+        title: I'm DJ Cilvia
+        url: 
+        presenter: cilvia
+        icon: 
+        span: 2
+        rest: false
+      - time: "11:30"
+        title: エスペラント語をべんきょうした
+        url: 
+        presenter: eliza
+        icon: 
+        span: 1
+        rest: false
+      - time: "11:45"
+        title: HTMLとCSSでスライドを書く
+        url: 
+        presenter: kawanaka
+        icon: 
+        span: 1
+        rest: false
+      - time: "12:00"
+        title: 谷山浩子
+        url: 
+        presenter: theoldmoon0602
+        icon: 
+        span: 2
+        rest: false
+      - time: "12:30"
+        title: 休憩
+        url: 
+        presenter: 
+        icon: 
+        span: 2
+        rest: true
+  - name: 午後の部
+    abbr: pm
+    lts:
+      - time: "13:00"
+        title: 技科大カンファのデザイン供養
+        url: 
+        presenter: ig98n
+        icon: 
+        span: 1
+        rest: false
+      - time: "13:15"
+        title: ハッカソン行ってきた
+        url: 
+        presenter: kawanaka
+        icon: 
+        span: 1
+        rest: false
+      - time: "13:30"
+        title: まほみほ、あるいはまほエリについて
+        url: 
+        presenter: yamasy1549
+        icon: 
+        rest: false
+        span: 2
+      - time: "14:00"
+        title: "#GentooInstallBattle"
+        url: 
+        presenter: eliza
+        icon: 
+        span: 2
+        rest: false
+      - time: "14:30"
+        title: 休憩
+        url: 
+        presenter: 
+        icon: 
+        span: 2
+        rest: true
+      - time: "15:00"
+        title: 論理回路入門
+        url: 
+        presenter: ptr-yudai
+        icon: 
+        span: 4
+        rest: false
+      - time: "16:00"
+        title: ｻﾊﾞｯ･･･ｻﾊﾞｻﾊﾞｯ･･･
+        url: 
+        presenter: shuft
+        icon: 
+        span: 1
+        rest: false
+      - time: "16:15"
+        title: 飛び込みLT
+        url: 
+        presenter: 
+        icon: 
+        span: 3
+        rest: true
