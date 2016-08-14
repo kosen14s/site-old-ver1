@@ -1,0 +1,19 @@
+doctype html
+include ../_head
+include ../_footer
+include ./_lt
+
+html(lang="ja")
+  head
+    +head("LT", "article", "", "../styles/lt.css", "")
+  body
+    .global-header
+      h1
+        img(src="../images/lt/title.png" alt="kosen14s_LT")
+    main
+      each part in lts[0]
+        h2.part= part.name
+        dl.lt-table
+          each lt in part.lts
+            +lt(lt.time, lt.title, lt.url, lt.presenter, lt.icon, lt.span, lt.rest)
+    +footer()

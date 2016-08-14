@@ -1,0 +1,98 @@
+- 
+  - name: 午前の部
+    abbr: am
+    lts:
+      - time: "10:00"
+        title: 日本語、正しく喋っていますか?
+        url: 
+        presenter: cilvia
+        icon: /../images/lt/cilvia.jpg
+        span: 2
+        rest: false
+      - time: "10:30"
+        title: "404 -Not Found-"
+        url: https://www.slideshare.net/secret/LVE323SHZP23MI
+        presenter: yamasy1549
+        icon: /../images/lt/yamasy1549.png
+        span: 2
+        rest: false
+      - time: "11:00"
+        title: 休憩
+        url: 
+        presenter: 
+        icon: 
+        span: 2
+        rest: true
+      - time: "11:30"
+        title: プログラマのための音楽入門以前
+        url: https://www.dropbox.com/s/5nvqvm2ps6ixddu/slides.pdf?dl=0
+        presenter: eliza
+        icon: /../images/lt/eliza.jpg
+        span: 1
+        rest: false
+      - time: "11:45"
+        title: ゲームエンジン
+        url: https://kwnktks0515.github.io/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%89%E7%BD%AE%E3%81%8D%E5%A0%B4/Game_engine.html#
+        presenter: kawanaka
+        icon: /../images/lt/kawanaka.jpg
+        span: 1
+        rest: false
+      - time: "12:00"
+        title: 超簡易！　Brainなんとか入門
+        url: 
+        presenter: theoldmoon0602
+        icon: /../images/lt/theoldmoon0602.jpg
+        span: 2
+        rest: false
+      - time: "12:30"
+        title: 休憩
+        url: 
+        presenter: 
+        icon: 
+        span: 2
+        rest: true
+  - name: 午後の部
+    abbr: pm
+    lts:
+      - time: "13:00"
+        title: プログラミング教育の話 (+ 技科大カンファのデザイン供養)
+        url: 
+        presenter: ig98n
+        icon: /../images/lt/ig98n.png
+        span: 1
+        rest: false
+      - time: "13:15"
+        title: 最近話題のある制度
+        url: https://kwnktks0515.github.io/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%89%E7%BD%AE%E3%81%8D%E5%A0%B4/Basic_income.html#
+        presenter: kawanaka
+        icon: /../images/lt/kawanaka.jpg
+        span: 1
+        rest: false
+      - time: "13:30"
+        title: すごい Esperanto たのしく学ぼう !
+        url: https://www.dropbox.com/s/omp8bf7x8oqmr6k/slides.pdf?dl=0
+        presenter: eliza
+        icon: /../images/lt/eliza.jpg
+        rest: false
+        span: 2
+      - time: "14:00"
+        title: 休憩
+        url: 
+        presenter: 
+        icon: 
+        span: 2
+        rest: true
+      - time: "14:30"
+        title: 時限爆弾設計理論
+        url: https://drive.google.com/open?id=0BxNB0ArSE1wENUE5RnVFb0FEdUU
+        presenter: ptr-yudai
+        icon: /../images/lt/ptr-yudai.png
+        span: 3
+        rest: false
+      - time: "15:15"
+        title: 飛び込みLT
+        url: 
+        presenter: 
+        icon: 
+        span: 3
+        rest: true
