@@ -4,7 +4,7 @@
     lts:
       - time: "10:00"
         title: 日本語、正しく喋っていますか?
-        url: 
+        url: https://sg1b-broadcast.officeapps.live.com/m/Broadcast.aspx?Fi=e70136d8b07cb538%5Fd5dbcbcb%2Dc062%2D4c80%2Db859%2D09565dde691c%2Epptx
         presenter: cilvia
         icon: /../images/lt/cilvia.jpg
         span: 2
@@ -56,7 +56,7 @@
     lts:
       - time: "13:00"
         title: プログラミング教育の話 (+ 技科大カンファのデザイン供養)
-        url: 
+        url: https://docs.google.com/presentation/d/1XBLXmhjm_RDLxL9v5Vh0yjBymtnYrFZ5hc_EdUjSJP8/edit#slide=id.p4
         presenter: ig98n
         icon: /../images/lt/ig98n.png
         span: 1
