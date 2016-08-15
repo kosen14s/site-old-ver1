@@ -4,14 +4,14 @@
     lts:
       - time: "10:00"
         title: 日本語、正しく喋っていますか?
-        url: https://sg1b-broadcast.officeapps.live.com/m/Broadcast.aspx?Fi=e70136d8b07cb538%5Fd5dbcbcb%2Dc062%2D4c80%2Db859%2D09565dde691c%2Epptx
+        url: 
         presenter: cilvia
         icon: /../images/lt/cilvia.jpg
         span: 2
         rest: false
       - time: "10:30"
         title: "404 -Not Found-"
-        url: https://www.slideshare.net/secret/LVE323SHZP23MI
+        url: 
         presenter: yamasy1549
         icon: /../images/lt/yamasy1549.png
         span: 2
@@ -32,7 +32,7 @@
         rest: false
       - time: "11:45"
         title: ゲームエンジン
-        url: https://kwnktks0515.github.io/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%89%E7%BD%AE%E3%81%8D%E5%A0%B4/Game_engine.html#
+        url: 
         presenter: kawanaka
         icon: /../images/lt/kawanaka.jpg
         span: 1
@@ -63,7 +63,7 @@
         rest: false
       - time: "13:15"
         title: 最近話題のある制度
-        url: https://kwnktks0515.github.io/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%89%E7%BD%AE%E3%81%8D%E5%A0%B4/Basic_income.html#
+        url: 
         presenter: kawanaka
         icon: /../images/lt/kawanaka.jpg
         span: 1
@@ -84,7 +84,7 @@
         rest: true
       - time: "14:30"
         title: 時限爆弾設計理論
-        url: https://drive.google.com/open?id=0BxNB0ArSE1wENUE5RnVFb0FEdUU
+        url: 
         presenter: ptr-yudai
         icon: /../images/lt/ptr-yudai.png
         span: 3
