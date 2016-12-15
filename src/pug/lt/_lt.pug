@@ -1,7 +1,8 @@
 mixin lt(time, title, url, presenter, icon, span, rest)
   tr
     dt.time
-      time= time + ' ' + part.abbr
+      //- time= time + ' ' + part.abbr
+      time= time
     dd.description(class='span_'+span class=rest ? 'dotted' : '')
       a(href=url)
         h3.title= title
