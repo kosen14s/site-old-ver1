@@ -1,0 +1,59 @@
+.global-header {
+  width: 100%;
+  padding: 30px 15%;
+  background-color: $dark-gray;
+  color: $light-gray;
+  box-shadow:
+    0 5px lighten($dark-gray, 10%),
+    0 10px lighten($dark-gray, 30%),
+    0 15px lighten($dark-gray, 50%);
+
+  @media(max-width: 960px) {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+
+  @media(max-width: 340px) {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  .underline {
+    height: 0;
+    border-bottom: 1px solid $light-gray;
+  }
+
+  .title {
+    padding-left: 10px;
+
+    .logo {
+      width: 24%;
+      display: block;
+
+      @media(max-width: 960px) {
+        margin: auto;
+        width: 40%;
+      }
+
+      @media(max-width: 340px) {
+        margin: auto;
+        width: 70%;
+      }
+    }
+  }
+
+  .lead {
+    display: table;
+    max-width: 50%;
+    margin-left: auto;
+    padding-right: 10px;
+
+    * { color: $light-gray; }
+
+    @media(max-width: 960px) {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0;
+    }
+  }
+}

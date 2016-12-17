@@ -1,0 +1,11 @@
+main {
+  padding: 100px 0;
+  margin: auto 15%;
+
+  @media(max-width: 960px) {
+    margin: auto 10%;
+  }
+  @media(max-width: 340px) {
+    margin: auto 5%;
+  }
+}

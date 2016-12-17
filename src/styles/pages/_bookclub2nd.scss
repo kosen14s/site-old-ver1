@@ -1,6 +1,6 @@
 body {
-  background-color: $light-brown;
-  color: $font-color-brown;
+  background-color: $light-gray;
+  color: $font-color-black;
 }
 
 .book {
@@ -25,11 +25,11 @@ body {
     > h2 {
       margin-top: 0;
       position: relative;
-      border-bottom: 1px dashed $font-color-brown;
+      border-bottom: 1px dashed $font-color-black;
 
       &:after {
         content: '';
-        background-color: $font-color-brown;
+        background-color: $font-color-black;
         display: block;
         position: absolute;
         z-index: 10;

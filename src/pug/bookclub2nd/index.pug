@@ -1,0 +1,23 @@
+doctype html
+include ../_head
+include ../_footer
+include ./_book
+
+html(lang="ja")
+  head
+    +head("読書会", "article", "またまたやります Kosen14's 読書会 苛烈極まるトレーニングの先に彼等が見たものとは……", "../styles/bookclub2nd.css", "https://raw.githubusercontent.com/kosen14s/kosen14s.github.io/master/images/bookclub/ogp.png")
+  body
+    .global-header
+      h1.title
+        img.logo(src="../images/kosen14s-bookclub-logo.png")
+      hr.underline
+      .lead
+        p
+          | またまたやります Kosen14's 読書会
+          br
+          | 苛烈極まるトレーニングの先に彼等が見たものとは……
+    main
+      each book in bookclub2nd
+        +book(book.account_name, book.account_url, book.account_icon, book.title, book.date, book.url)
+          p= book.description
+    +footer()
