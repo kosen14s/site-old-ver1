@@ -15,5 +15,5 @@ html(lang="ja")
         h2.part= part.name
         dl.lt-table
           each lt in part.lts
-            +lt(lt.time, lt.title, lt.url, lt.presenter, lt.icon, lt.span, lt.rest)
+            +lt(lt.time, part.abbr, lt.title, lt.url, lt.presenter, lt.icon, lt.span, lt.rest)
     +footer()
