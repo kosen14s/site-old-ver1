@@ -12,6 +12,3 @@ deployment:
       - git config --global user.name "yamasy1549"
       - git config --global user.email "sanae@yamasy.info"
       - gulp deploy
-test:
-  override:
-    - echo "test" # 強制的にテストを飛ばす
