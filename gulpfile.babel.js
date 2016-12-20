@@ -57,7 +57,8 @@ const BROWSER_SYNC_OPTIONS = {
 };
 
 const GH_PAGES_OPTIONS = {
-    branch: "master"
+    branch: "master",
+    commit: "[ci skip] Update Pages"
 };
 
 gulp.task("yaml", () => {
