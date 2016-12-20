@@ -1,13 +1,10 @@
 machine:
   timezone: Asia/Tokyo
   node:
-    version: 6.9.2
+    version: 6.7.0
 dependencies:
   pre:
     - npm rebuild node-sass
-test:
-  override:
-    - ./tests.sh
 deployment:
   production:
     branch: develop
