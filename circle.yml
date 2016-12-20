@@ -5,6 +5,9 @@ machine:
 dependencies:
   pre:
     - npm rebuild node-sass
+test:
+  override:
+    - ./tests.sh
 deployment:
   production:
     branch: develop
