@@ -62,3 +62,35 @@ pull req を作ると、コンパイルエラーなどがないかテストが�
 * `account_icon` : `src/images/bookclub` に置いてください。
 
 * `description` : プレーンテキストです。途中にリンクや色や改行をはさむことはできません。
+
+clone してもいいですが、ブラウザ上で編集することもできます。
+
+![/kosen14s.github.io](./images/home.png)
+
+`src/yaml/[ファイル名].yml` に移動します。
+
+![/kosen14s.github.io/blob/develop/src/yaml/*.yml](./images/yaml.png)
+
+右の方に鉛筆マークがあるのでクリックして編集します。
+
+![commit](./images/commit-changes.png)
+
+編集ができたら上側のフォームに変更内容を書きます。
+ラジオボタンは `Create a new branch` の方を選択します。その下の小さいフォーム（ブランチ名）は何でも構いません。
+
+準備ができたら `Propose file change` ボタンを押します。
+
+![/kosen14s.github.io/compare/develop...yamasy1549-patch-1?quick_pull=1](./images/open-a-pull-request.png)
+
+* `base: develop` `compare: [さっきのフォームに入れたブランチ名]` になっていること
+* 自分のした変更
+
+を確認したら `Create pull request` ボタンを押します。
+
+![/kosen14s.github.io/pull](./images/pull-request.png)
+
+`All checks have passed` になってたらOKです。 `Merge pull request` -> `Confirm merge` ボタンを押します。
+
+![/kosen14s.github.io/pull](./images/merged-pull-request.png)
+
+しばらくすると変更が反映されます。 `Delete branch` でブランチを消しておきます。
