@@ -19,7 +19,7 @@ html(lang="ja")
           br
           small 筋肉と知慧に溢れた kosen14's をお見せしますよ…
     main
-      each book in bookclub
-        +book(book.account_name, book.account_url, book.account_icon, book.title, book.date, book.url)
+      each book, i in bookclub
+        +book(i, book.account_name, book.account_url, book.account_icon, book.title, book.date, book.url)
           p= book.description
     +footer()
