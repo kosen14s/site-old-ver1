@@ -17,7 +17,7 @@ html(lang="ja")
           br
           | 苛烈極まるトレーニングの先に彼等が見たものとは……
     main
-      each book in bookclub2nd
-        +book(book.account_name, book.account_url, book.account_icon, book.title, book.date, book.url)
+      each book, i in bookclub2nd
+        +book(i, book.account_name, book.account_url, book.account_icon, book.title, book.date, book.url)
           p= book.description
     +footer()
