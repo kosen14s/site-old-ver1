@@ -124,7 +124,7 @@ gulp.task('jsmin', () => {
         .pipe(gulp.dest(path.join(DEST_DIR, 'scripts')))
 })
 
-gulp.task('compile', ['pug-noplumber', 'scss-noplumber', 'imagemin', 'jsmin'])
+gulp.task('build', ['pug-noplumber', 'scss-noplumber', 'imagemin', 'jsmin'])
 
 gulp.task('deploy', () => {
     return gulp.src(path.join(DEST_DIR, '**/*'))
