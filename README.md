@@ -11,21 +11,26 @@
 ```
 git clone https://github.com/kosen14s/kosen14s.github.io.git
 # もしくは git clone git@github.com:kosen14s/kosen14s.github.io.git
+
+cd kosen14s.github.io.git
 ```
 
 ```
-npm i
+npm i -g yarn
 # 事前に Node.js を入れてください
+
+yarn
+# 必要なpackageを落としてきます
 ```
 Node.js: [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 
 ```
-gulp compile
+yarn run build
 # 初回だけ
 ```
 
 ```
-gulp watch
+yarn run watch
 # ファイルの変更を検知して自動でブラウザを更新します
 ```
 
