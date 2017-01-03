@@ -14,6 +14,7 @@ import sass          from 'gulp-sass'
 import sassGlob      from 'gulp-sass-glob'
 import sassLint      from 'gulp-sass-lint'
 import vinylYamlData from 'vinyl-yaml-data'
+import yaml          from 'gulp-yaml'
 import deepExtend    from 'deep-extend-stream'
 import uglify        from 'gulp-uglify'
 
@@ -62,6 +63,8 @@ const GH_PAGES_OPTIONS = {
 
 gulp.task('yaml', () => {
     return gulp.src(path.join(YAML_DIR, '**/*.{yaml,yml}'))
+        .pipe(plumber())
+        .pipe(yaml())
         .pipe(vinylYamlData())
         .pipe(deepExtend(locals))
 })
