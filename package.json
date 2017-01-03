@@ -28,7 +28,8 @@
     "vinyl-yaml-data": "^2.0.0"
   },
   "scripts": {
-    "test": "gulp compile"
+    "build": "gulp build",
+    "watch": "gulp watch"
   },
   "author": ""
 }
