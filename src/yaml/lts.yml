@@ -25,7 +25,7 @@
         rest: true
       - time: "11:30"
         title: プログラマのための音楽入門以前
-        url: https://www.dropbox.com/s/5nvqvm2ps6ixddu/slides.pdf?dl=0
+        url: //www.dropbox.com/s/5nvqvm2ps6ixddu/slides.pdf?dl=0
         presenter: eliza
         icon: /../images/lt/eliza.jpg
         span: 1
@@ -39,7 +39,7 @@
         rest: false
       - time: "12:00"
         title: 超簡易！　Brainなんとか入門
-        url: http://theoldmoon0602.tk/brainhogehoge.pdf
+        url: //theoldmoon0602.tk/brainhogehoge.pdf
         presenter: theoldmoon0602
         icon: /../images/lt/theoldmoon0602.jpg
         span: 2
@@ -56,7 +56,7 @@
     lts:
       - time: "13:00"
         title: プログラミング教育の話 (+ 技科大カンファのデザイン供養)
-        url: https://docs.google.com/presentation/d/1XBLXmhjm_RDLxL9v5Vh0yjBymtnYrFZ5hc_EdUjSJP8/edit#slide=id.p4
+        url: //docs.google.com/presentation/d/1XBLXmhjm_RDLxL9v5Vh0yjBymtnYrFZ5hc_EdUjSJP8/edit#slide=id.p4
         presenter: ig98n
         icon: /../images/lt/ig98n.png
         span: 1
@@ -70,7 +70,7 @@
         rest: false
       - time: "13:30"
         title: すごい Esperanto たのしく学ぼう !
-        url: https://www.dropbox.com/s/omp8bf7x8oqmr6k/slides.pdf?dl=0
+        url: //www.dropbox.com/s/omp8bf7x8oqmr6k/slides.pdf?dl=0
         presenter: eliza
         icon: /../images/lt/eliza.jpg
         rest: false
