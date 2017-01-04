@@ -12,7 +12,9 @@ dependencies:
     - npm rebuild node-sass
   override:
     - yarn install
-  pre:
+test:
+  override:
+    - yarn run build
 deployment:
   production:
     branch: develop
