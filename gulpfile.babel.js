@@ -58,7 +58,8 @@ const BROWSER_SYNC_OPTIONS = {
 }
 
 const GH_PAGES_OPTIONS = {
-    branch: 'master'
+    branch: 'master',
+    message: '[skip ci] Update ' + new Date().toISOString()
 }
 
 gulp.task('yaml', () => {
