@@ -26,4 +26,3 @@ general:
   branches:
     ignore:
       - master
-      - develop
