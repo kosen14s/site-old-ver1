@@ -130,7 +130,7 @@ gulp.task('build', ['pug-noplumber', 'scss-noplumber', 'imagemin', 'jsmin'])
 gulp.task('deploy', () => {
     return gulp.src(path.join(DEST_DIR, '**/*'))
         .pipe(shell([
-          'sed -ie "s/..\//.\//g" index.html'
+          'sed -i -e "s/\.\.\//\.\//g" index.html'
         ]))
         .pipe(ghPages(GH_PAGES_OPTIONS))
 })
