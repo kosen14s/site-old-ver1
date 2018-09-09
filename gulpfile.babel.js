@@ -17,6 +17,7 @@ import vinylYamlData from 'vinyl-yaml-data'
 import yaml          from 'gulp-yaml'
 import deepExtend    from 'deep-extend-stream'
 import uglify        from 'gulp-uglify'
+import shell         from 'gulp-shell'
 
 const $           = loadPlugins()
 const reload      = browserSync.reload
@@ -128,6 +129,9 @@ gulp.task('build', ['pug-noplumber', 'scss-noplumber', 'imagemin', 'jsmin'])
 
 gulp.task('deploy', () => {
     return gulp.src(path.join(DEST_DIR, '**/*'))
+        .pipe(shell([
+          'sed -ie "s/..\//.\//g" index.html'
+        ]))
         .pipe(ghPages(GH_PAGES_OPTIONS))
 })
 
